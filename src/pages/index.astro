@@ -5,7 +5,6 @@ import Layout from "../layouts/Layout.astro"
 import FaqSection from "../components/FaqSection.astro"
 import ServicesCarousel from "../components/ServicesCarousel.astro"
 import HeroSection from "../components/HeroSection.astro"
-import NewsletterSection from "../components/NewsletterSection.astro"
 import RescueSprintSection from "../components/RescueSprintSection.astro"
 import SafeChangesSection from "../components/SafeChangesSection.astro"
 import TrustSection from "../components/TrustSection.astro"
@@ -23,7 +22,6 @@ import services from "../data/services.json"
 import home from "../data/home.json"
 import pricing from "../data/pricing.json"
 import global_settings from "../data/global_settings.json"
-import newsletter from "../data/newsletter.json"
 
 ---
 
@@ -60,7 +58,5 @@ import newsletter from "../data/newsletter.json"
     faq={ faq }
     title={ home.faq_title }
   />
-
-  <NewsletterSection newsletter={newsletter} />
 
 </Layout>
