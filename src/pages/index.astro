@@ -2,25 +2,28 @@
 
 import Layout from "../layouts/Layout.astro"
 
-import CaseStudiesSection from "../components/CaseStudiesSection.astro"
-import ClientsSection from "../components/ClientsSection.astro"
 import FaqSection from "../components/FaqSection.astro"
 import ServicesCarousel from "../components/ServicesCarousel.astro"
 import HeroSection from "../components/HeroSection.astro"
 import NewsletterSection from "../components/NewsletterSection.astro"
+import RescueSprintSection from "../components/RescueSprintSection.astro"
+import SafeChangesSection from "../components/SafeChangesSection.astro"
+import TrustSection from "../components/TrustSection.astro"
+import TechnologiesSection from "../components/TechnologiesSection.astro"
+import OngoingSupportSection from "../components/OngoingSupportSection.astro"
 import PricingSection from "../components/PricingSection.astro"
-import QuoteSection from "../components/QuoteSection.astro"
-import TestimonialsSection from "../components/TestimonialsSection.astro"
 
-import caseStudies from "../data/case_studies.json"
-import clients from "../data/clients.json"
 import faq from "../data/faq.json"
+import rescueSprint from "../data/offer/rescue_sprint.json"
+import safeChanges from "../data/offer/safe_changes.json"
+import trust from "../data/offer/trust.json"
+import technologies from "../data/offer/technologies.json"
+import ongoingSupport from "../data/offer/ongoing_support.json"
 import services from "../data/services.json"
 import home from "../data/home.json"
 import pricing from "../data/pricing.json"
 import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
-import testimonials from "../data/testimonials.json"
 
 ---
 
@@ -32,37 +35,26 @@ import testimonials from "../data/testimonials.json"
     title={ home.hero_title }
   />
 
+  <RescueSprintSection data={ rescueSprint } />
+
   <ServicesCarousel
+    id="how-it-works"
     services={ services }
     title={ home.services_title }
   />
 
-  <ClientsSection
-    clients={ clients }
-    title={ home.clients_title }
-  />
+  <SafeChangesSection data={ safeChanges } />
 
-  <QuoteSection
-    cite={ home.quote_cite }
-    content={ home.quote_content }
-    image={ home.quote_image }
-    role={ home.quote_role }
-  />
+  <TrustSection data={ trust } />
 
-  <CaseStudiesSection
-    caseStudies={ caseStudies }
-    title={ home.case_studies_title }
-  />
-
-  <TestimonialsSection
-    testimonials={ testimonials }
-    title={ home.testimonials_title }
-  />
+  <TechnologiesSection data={ technologies } />
 
   <PricingSection
     pricing={ pricing }
     title={ home.pricing_title }
   />
+
+  <OngoingSupportSection data={ ongoingSupport } />
 
   <FaqSection
     faq={ faq }

@@ -1,22 +1,26 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "JavaScript Application Rescue & Stabilization",
+  "description": "Fixing bugs, unstable UI, and performance issues in existing JavaScript applications.",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "https://codetailor.site",
   "demo": {
-    "title": "Need design?",
-    "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Book a call"
+    "title": "Describe your issue",
+    "content": "<strong>Share your current problem in 2-3 minutes.</strong> I will review the case and propose a safe, focused rescue plan.",
+    "cta": "Get a rescue plan"
   },
   "theme_color": "#18181b",
   "nav": [
     {
-      "title": "Services",
-      "link": "/#services"
+      "title": "Rescue Sprint",
+      "link": "/#rescue-sprint"
     },
     {
-      "title": "Case studies",
-      "link": "/#case-studies"
+      "title": "How it works",
+      "link": "/#how-it-works"
+    },
+    {
+      "title": "Safe changes",
+      "link": "/#safe-changes"
     },
     {
       "title": "Pricing",
@@ -25,10 +29,6 @@
     {
       "title": "FAQ",
       "link": "/#faq"
-    },
-    {
-      "title": "Newsletter",
-      "link": "/#newsletter"
     }
   ],
 

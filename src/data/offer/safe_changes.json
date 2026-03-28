@@ -1,0 +1,28 @@
+{
+  "id": "safe-changes",
+  "title": "Safe, controlled changes - no surprises",
+  "description": "All work is done in a way that minimizes risk and keeps your application safe.",
+  "principles": [
+    {
+      "title": "Version-controlled",
+      "description": "All changes are version-controlled (Git)"
+    },
+    {
+      "title": "Isolated branches",
+      "description": "Work is done in isolated branches - never directly on production"
+    },
+    {
+      "title": "Tested",
+      "description": "Changes are tested before deployment"
+    },
+    {
+      "title": "Rollback safe",
+      "description": "Every change can be safely rolled back"
+    },
+    {
+      "title": "No risky rewrites",
+      "description": "No risky rewrites or unnecessary changes"
+    }
+  ],
+  "note": "If your project does not have proper setup (repository, staging), I can help establish a safe workflow first."
+}

@@ -1,0 +1,28 @@
+---
+const { data } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={data.id}>
+  <!-- Header -->
+  <div class="mb-8 max-w-3xl">
+    <h2 class="bs-h2">{data.title}</h2>
+    <p class="bs-body-text mt-4 text-bs-foreground-dark">{data.description}</p>
+  </div>
+
+  <!-- What to expect as numbered list -->
+  <div class="grid gap-4 max-w-2xl">
+    {data.whatToExpect.map((item, idx) => (
+      <div class="flex gap-4 items-start">
+        <span class="text-2xl font-bold text-bs-foreground-light flex-shrink-0">{idx + 1}.</span>
+        <p class="text-lg pt-1">{item}</p>
+      </div>
+    ))}
+  </div>
+
+  <!-- Positioning statement -->
+  {data.positioning && (
+    <div class="mt-8 p-6 bg-bs-surface-2/50 border-l-4 border-bs-foreground-light rounded">
+      <p class="text-lg italic text-bs-foreground-dark">{data.positioning}</p>
+    </div>
+  )}
+</section>

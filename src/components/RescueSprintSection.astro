@@ -1,0 +1,40 @@
+---
+const { data } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={data.id}>
+  <!-- Header -->
+  <div class="mb-8">
+    <h2 class="bs-h2">{data.title}</h2>
+    <p class="bs-body-text mt-4 text-bs-foreground-dark max-w-2xl">{data.description}</p>
+    {data.descriptionNote && <p class="bs-body-text mt-3 max-w-2xl">{data.descriptionNote}</p>}
+  </div>
+
+  <!-- 2-column: What I do + Outcome/Approach -->
+  <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+    <!-- What I do -->
+    <div>
+      <h3 class="bs-h3 mb-4">What I do</h3>
+      <ul class="flex flex-col gap-3">
+        {data.whatIDo.map((item) => (
+          <li class="text-lg flex gap-3">
+            <span class="text-bs-foreground-light">▸</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Outcome + Approach -->
+    <div class="flex flex-col gap-6">
+      <div class="p-6 bg-bs-surface-0 border border-bs-surface-3 rounded-xl">
+        <h4 class="font-semibold text-lg mb-3">Outcome</h4>
+        <p class="text-bs-foreground-dark">{data.outcome}</p>
+      </div>
+      <div class="p-6 bg-bs-surface-2 border border-bs-surface-3 rounded-xl">
+        <h4 class="font-semibold text-lg mb-3">Approach</h4>
+        <p class="text-bs-foreground-dark">{data.approach}</p>
+      </div>
+    </div>
+  </div>
+</section>

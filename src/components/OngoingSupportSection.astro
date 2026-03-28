@@ -1,0 +1,48 @@
+---
+const { data } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={data.id}>
+  <!-- Header -->
+  <div class="mb-8">
+    <h2 class="bs-h2">{data.title}</h2>
+    <p class="bs-body-text mt-4 text-bs-foreground-dark max-w-2xl">{data.description}</p>
+  </div>
+
+  <!-- 3-section layout: What includes | How it works | Result -->
+  <div class="grid lg:grid-cols-3 gap-6 mb-8">
+    <!-- What includes -->
+    <div class="p-6 bg-bs-surface-0 border border-bs-surface-3 rounded-xl">
+      <h3 class="bs-h3 mb-4">What this includes</h3>
+      <ul class="flex flex-col gap-3">
+        {data.includes.map((item) => (
+          <li class="text-sm flex gap-2">
+            <span class="text-bs-foreground-light">•</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- How it works -->
+    <div class="p-6 bg-bs-surface-0 border border-bs-surface-3 rounded-xl">
+      <h3 class="bs-h3 mb-4">How it works</h3>
+      <ul class="flex flex-col gap-3">
+        {data.howItWorks.map((step, idx) => (
+          <li class="text-sm flex gap-2">
+            <span class="font-bold text-bs-foreground-light min-w-6">{idx + 1}.</span>
+            <span>{step}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Result -->
+    <div class="p-6 bg-bs-surface-2 border border-bs-surface-3 rounded-xl flex flex-col justify-between">
+      <div>
+        <h3 class="bs-h3 mb-4">Result</h3>
+        <p class="text-sm text-bs-foreground-dark">{data.result}</p>
+      </div>
+    </div>
+  </div>
+</section>

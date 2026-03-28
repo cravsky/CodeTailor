@@ -1,0 +1,14 @@
+{
+  "id": "rescue-sprint",
+  "title": "Rescue Sprint",
+  "description": "A focused engagement to fix the most important issues in your application - from critical bugs to small but frustrating UI and usability problems.",
+  "descriptionNote": "Typically focused on a limited scope of high-impact fixes that can be completed within a few days of work.",
+  "whatIDo": [
+    "Fix broken features and visible issues",
+    "Improve UI consistency and responsiveness",
+    "Resolve performance bottlenecks",
+    "Identify deeper problems that may cause future issues"
+  ],
+  "outcome": "Your application works more reliably, feels smoother, and stops getting in your way.",
+  "approach": "No full rewrite. No unnecessary complexity. Just targeted fixes where they matter most."
+}

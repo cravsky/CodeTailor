@@ -1,30 +1,26 @@
 [
   {
-    "title": "We create timeless visual identities for modern brands.",
-    "content": "<strong>Great companies are built on their ability to adapt and grow.</strong> We create brands that will adapt and flourish no matter where the market takes you.",
-    "cta": "Call us about branding",
-    "image": "/content-images/blackspike-wallpaper-01.avif",
-    "image_alt": ""
+    "title": "1. Quick form",
+    "content": "You describe your problem and provide basic details about your application."
   },
   {
-    "title": "We design websites that drive conversions and delight users.",
-    "content": "<strong>Experts in imagining future interfaces and experiences.</strong> From UX to creative to analytics, we are there every step of the way.",
-    "cta": "Book a website review call",
-    "image": "/content-images/blackspike-wallpaper-02.avif",
-    "image_alt": ""
+    "title": "2. Initial review",
+    "content": "I review your case and check if I can help."
   },
   {
-    "title": "Design across all dimensions",
-    "content": "<strong>Outstanding 3D design and concepts.</strong> We provide top-of-the-line 3D modelling services delivered by our skilled team of 3D artists.",
-    "cta": "Our 3D Services",
-    "image": "/content-images/blackspike-wallpaper-03.avif",
-    "image_alt": ""
+    "title": "3. Scope & estimate",
+    "content": "I propose what to fix first, with a clear scope, timeline, and price."
   },
   {
-    "title": "Apps for all devices and seasons",
-    "content": "<strong>We help companies supercharge their apps by providing world-class, effective design.</strong> Best practice design processes for your products",
-    "cta": "Arrange an app demo",
-    "image": "/content-images/blackspike-wallpaper-04.avif",
-    "image_alt": ""
+    "title": "4. Short call (if needed)",
+    "content": "We clarify details and confirm the scope."
+  },
+  {
+    "title": "5. Fixes",
+    "content": "I implement targeted improvements - from bugs to UI and performance."
+  },
+  {
+    "title": "6. Handover",
+    "content": "You get a more stable application."
   }
 ]

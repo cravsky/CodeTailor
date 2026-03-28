@@ -1,0 +1,13 @@
+{
+  "id": "technologies",
+  "title": "Built for real-world JavaScript applications",
+  "description": "I work with modern JavaScript/TypeScript applications across frontend and backend.",
+  "commonSetups": [
+    "React, Next.js",
+    "Angular",
+    "Node.js (APIs, backend services)",
+    "Vite / modern frontend tooling"
+  ],
+  "flexibility": "If your application is built with JavaScript or TypeScript - I can work with it.",
+  "note": "You do not need a perfect setup - I work with existing, often messy applications."
+}

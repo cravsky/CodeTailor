@@ -1,0 +1,34 @@
+---
+const { data } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={data.id}>
+  <!-- Header -->
+  <div class="mb-8">
+    <h2 class="bs-h2">{data.title}</h2>
+    <p class="bs-body-text mt-4 text-bs-foreground-dark max-w-2xl">{data.description}</p>
+  </div>
+
+  <!-- Tech stack badges -->
+  <div class="flex flex-wrap gap-3 mb-8">
+    {data.commonSetups.map((tech) => (
+      <span class="px-4 py-2 bg-bs-surface-2 border border-bs-surface-3 rounded-full text-sm font-medium">
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  <!-- Flexibility statement -->
+  {data.flexibility && (
+    <p class="text-lg mb-6 max-w-2xl">
+      <strong>{data.flexibility}</strong>
+    </p>
+  )}
+
+  <!-- Note -->
+  {data.note && (
+    <p class="text-sm text-bs-foreground-dark italic max-w-2xl">
+      {data.note}
+    </p>
+  )}
+</section>

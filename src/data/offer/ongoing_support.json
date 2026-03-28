@@ -1,0 +1,18 @@
+{
+  "id": "ongoing-support",
+  "title": "Keep your application working - without constant firefighting",
+  "description": "After the initial fixes, I can continue improving and maintaining your application - handling small issues before they turn into bigger problems.",
+  "includes": [
+    "Fixing small bugs and issues as they appear",
+    "UI improvements and adjustments",
+    "Performance tweaks",
+    "Small changes (text, layout, responsiveness)",
+    "Ongoing stabilization of fragile areas"
+  ],
+  "howItWorks": [
+    "Simple monthly plan or prepaid hours",
+    "You send requests when needed",
+    "Work is done in small, controlled changes"
+  ],
+  "result": "Your application stays stable, predictable, and easier to work with - without accumulating technical debt."
+}

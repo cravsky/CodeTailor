@@ -1,0 +1,29 @@
+---
+const { data } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={data.id}>
+  <!-- Header -->
+  <div class="mb-8">
+    <h2 class="bs-h2">{data.title}</h2>
+    <p class="bs-body-text mt-4 text-bs-foreground-dark max-w-2xl">{data.description}</p>
+  </div>
+
+  <!-- Grid of principles -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    {data.principles.map((principle) => (
+      <div class="p-5 bg-bs-surface-0 border border-bs-surface-3 rounded-xl flex flex-col gap-3 @container">
+        <div class="w-8 h-8 rounded-full bg-bs-surface-2 flex items-center justify-center text-sm font-bold">✓</div>
+        <h4 class="font-semibold text-md">{principle.title}</h4>
+        <p class="text-sm text-bs-foreground-dark">{principle.description}</p>
+      </div>
+    ))}
+  </div>
+
+  <!-- Note -->
+  {data.note && (
+    <div class="text-sm text-bs-foreground-dark italic">
+      {data.note}
+    </div>
+  )}
+</section>

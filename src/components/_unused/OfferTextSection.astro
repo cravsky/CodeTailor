@@ -1,0 +1,19 @@
+---
+const { id, title, description, bullets = [], note } = Astro.props
+---
+
+<section class="bs-container bs-mt-lg" id={id}>
+  {title && <h2 class="bs-h2" set:html={title} />}
+
+  {description && <div class="bs-body-text mt-4 max-w-4xl" set:html={description} />}
+
+  {
+    bullets.length > 0 && (
+      <ul class="grid gap-3 mt-6 max-w-4xl">
+        {bullets.map((entry) => <li class="text-lg">- {entry}</li>)}
+      </ul>
+    )
+  }
+
+  {note && <p class="bs-body-text mt-6 text-bs-foreground-dark" set:html={note} />}
+</section>

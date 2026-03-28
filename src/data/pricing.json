@@ -1,30 +1,41 @@
 [
   {
-    "title": "Basic plan",
-    "tag": "Most popular",
-    "content": "One designer, 5 days a month",
-    "cta": "Start free trial",
-    "price": 999,
+    "title": "Small fixes",
+    "tag": "Typical range",
+    "content": "UI, text, and responsiveness improvements.",
+    "cta": "Get estimate",
+    "price_label": "EUR 50-150",
     "services": [
-      { "item": "Access to basic services" },
-      { "item": "Basic assets and logos" },
-      { "item": "Up to 10 individual assets" },
-      { "item": "Teams/slack chat" },
-      { "item": "Cancel Anytime" }
+      { "item": "Fast cleanup of visible issues" },
+      { "item": "Responsive behavior improvements" },
+      { "item": "Minor UX polish" },
+      { "item": "Clear scope before work starts" }
     ]
   },
   {
-    "title": "Enterprise plan",
+    "title": "Bug fixing / feature repair",
     "tag": "Best value",
-    "content": "One team, 5 days a month",
-    "cta": "Enquire now",
-    "price": 2999,
+    "content": "Repairing broken logic and unstable feature behavior.",
+    "cta": "Request rescue plan",
+    "price_label": "EUR 150-600",
     "services": [
-      { "item": "All basic plan services" },
-      { "item": "100 assets" },
-      { "item": "Advanced reporting and analytics" },
-      { "item": "Up to 30 individual renders" },
-      { "item": "120GB storage allowance" }
+      { "item": "Root-cause oriented bug fixes" },
+      { "item": "Stabilization of fragile features" },
+      { "item": "Small performance improvements" },
+      { "item": "Verification before delivery" }
+    ]
+  },
+  {
+    "title": "Rescue Sprint",
+    "tag": "Focused scope",
+    "content": "A short engagement to restore reliability in key areas.",
+    "cta": "Book sprint",
+    "price_label": "EUR 500-1500",
+    "services": [
+      { "item": "High-impact fixes in a defined scope" },
+      { "item": "Safer and more predictable behavior" },
+      { "item": "Documented handover" },
+      { "item": "Next-step recommendations" }
     ]
   }
 ]

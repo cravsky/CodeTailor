@@ -5,6 +5,7 @@ import Cube from '../assets/theme-images/icon-cube.svg'
 import CubeOutline from '../assets/theme-images/icon-cube-outline.svg'
 
 const { title, pricing } = Astro.props
+const featured_index = Math.floor(pricing.length / 2)
 
 ---
 
@@ -14,14 +15,14 @@ const { title, pricing } = Astro.props
   { title && <h2 class="bs-h2 text-center">{ title }</h2>}
 
   <!-- pricing -->
-  <div class="mt-8 grid lg:grid-cols-2 gap-8 lg:gap-0">
+  <div class:list={["mt-8 grid gap-8 lg:gap-6", pricing.length >= 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"]}>
 
     <!-- Item -->
 
     { pricing.map( ( item, index ) =>
 
     <article
-      class:list={['@container p-6 xl:p-16 flex flex-col gap-6 h-full w-full rounded-xl overflow-hidden lg:scale-90 @xl:justify-end', index === 1 ? 'bg-white/90 text-black/90 lg:scale-none' : 'bg-bs-surface-0/90']}>
+      class:list={['@container p-6 xl:p-16 flex flex-col gap-6 h-full w-full rounded-xl overflow-hidden @xl:justify-end', index === featured_index ? 'bg-white/90 text-black/90 lg:scale-[1.03]' : 'bg-bs-surface-0/90']}>
 
       <!-- Content -->
       <div class="relative">
@@ -30,8 +31,8 @@ const { title, pricing } = Astro.props
         <h2 class="bs-h3 flex gap-3 items-center">
 
           <!-- Icon -->
-          { index === 1 && <Cube height="32" width="32" />  }
-          { index !== 1 && <CubeOutline height="32" width="32" />  }
+          { index === featured_index && <Cube height="32" width="32" />  }
+          { index !== featured_index && <CubeOutline height="32" width="32" />  }
 
           <!-- Title -->
           <span>{ item.title }</span>
@@ -69,7 +70,7 @@ const { title, pricing } = Astro.props
         <footer class="flex justify-between items-center gap-2">
 
           <!-- Price -->
-          <span class="text-4xl lg:text-5xl">£{ item.price }<span class="text-2xl hidden @md:inline-block -translate-y-1 ms-2"> / month</span></span>
+          <span class="text-4xl lg:text-5xl">{item.price_label ?? `EUR ${item.price}`}</span>
 
           <!-- CTA button -->
           <button type="button" class="bs-btn inline-block self-start @4xl:mt-12 text-xl" onclick="demo.showModal()">
