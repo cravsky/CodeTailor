@@ -1,0 +1,27 @@
+{
+  "id": "problems",
+  "title": "Common issues I solve",
+  "subtitle": "If your app feels unstable or inconsistent, these are the most frequent patterns I fix first.",
+  "items": [
+    {
+      "text": "Some features do not work as expected",
+      "icon": "question"
+    },
+    {
+      "text": "Parts of the interface feel broken or inconsistent",
+      "icon": "broken_monitor"
+    },
+    {
+      "text": "The application is slow or unresponsive",
+      "icon": "slow"
+    },
+    {
+      "text": "Small issues keep piling up (UI, text, responsiveness)",
+      "icon": "documents"
+    },
+    {
+      "text": "Things just do not behave the way they should",
+      "icon": "bomb"
+    }
+  ]
+}

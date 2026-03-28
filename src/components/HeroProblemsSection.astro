@@ -1,0 +1,52 @@
+---
+import Bomb from '../assets/theme-images/icon-bomb.svg'
+import DesktopX from '../assets/theme-images/icon-device-desktop-x.svg'
+import Files from '../assets/theme-images/icon-files.svg'
+import HelpCircle from '../assets/theme-images/icon-help-circle.svg'
+import Hourglass from '../assets/theme-images/icon-hourglass.svg'
+
+const { data } = Astro.props
+
+const icon_map = {
+  bomb: Bomb,
+  broken_monitor: DesktopX,
+  documents: Files,
+  question: HelpCircle,
+  slow: Hourglass,
+}
+
+const color_map = {
+  bomb: 'text-red-300',
+  broken_monitor: 'text-orange-300',
+  documents: 'text-amber-300',
+  question: 'text-cyan-300',
+  slow: 'text-lime-300',
+}
+---
+
+<section class="bs-container bs-mt-md" id={data.id}>
+  <div class="rounded-xl border border-bs-surface-3 bg-bs-surface-0/70 p-6 md:p-8">
+    <header class="mb-6 md:mb-8">
+      <h2 class="bs-h3">{data.title}</h2>
+      <p class="bs-body-text text-bs-foreground-dark mt-2 max-w-3xl">{data.subtitle}</p>
+    </header>
+
+    <ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {
+        data.items.map((item) => {
+          const Icon = icon_map[item.icon] ?? HelpCircle
+          const color_class = color_map[item.icon] ?? 'text-bs-foreground-light'
+
+          return (
+            <li class="rounded-lg border border-bs-surface-3 bg-bs-surface-2/70 p-4 md:p-5 text-base md:text-lg flex flex-col gap-4">
+              <div class="rounded-md border border-bs-surface-3 bg-bs-surface-0/70 p-2.5 md:p-3 inline-flex self-start">
+                <Icon aria-hidden="true" class:list={['w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28', color_class]} width="112" height="112" />
+              </div>
+              <span>{item.text}</span>
+            </li>
+          )
+        })
+      }
+    </ul>
+  </div>
+</section>

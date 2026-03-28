@@ -1,6 +1,6 @@
 {
   "hero_title": "JavaScript Application Rescue & Stabilization",
-  "hero_content": "<p><strong>Fixing bugs, broken UI, and unpredictable behavior in existing JavaScript applications</strong> - so they finally work the way they should.</p><ul><li>Some features do not work as expected</li><li>Parts of the interface feel broken or inconsistent</li><li>The application is slow or unresponsive</li><li>Small issues keep piling up (UI, text, responsiveness)</li><li>Things just do not behave the way they should</li></ul><p>Takes 2-3 minutes. No call required.</p>",
+  "hero_content": "<p><strong>Fixing bugs, broken UI, and unpredictable behavior in existing JavaScript applications</strong> - so they finally work the way they should.</p><p>Takes 2-3 minutes. No call required.</p>",
   "services_title": "How it works",
   "pricing_title": "Simple, transparent pricing",
   "faq_title": "Frequently Asked Questions"
